@@ -1,6 +1,8 @@
 const answers = ["nsw", "australia", "hospital", "useful", "male"]
 const cw = ["correct", "wrong"]
 const states = [false, false, false, false, false]
+const pin = 37182813
+const wrongPin = 23101973
 
 const profileOfVictimIconElem = document.querySelector('.profile_of_victim_icon')
 const listOfParticipantsIconElem = document.querySelector('.list_of_participants_icon')
@@ -69,12 +71,23 @@ const message5Elem = document.querySelector('.message5')
 const cw5Elem = document.querySelector('.cw5')
 const inputBtn5 = document.querySelector('.input-btn5')
 
-const guessMarderer = document.querySelector('.guess-marderer')
+const guessMardererElem = document.querySelector('.guess-marderer')
 
 const mardererInput = document.querySelector('.marderer-input')
 const mardererBtn = document.querySelector('.marderer-btn')
 
-const callMessage = document.querySelector('.call-message')
+const callMessageElem = document.querySelector('.call-message')
+
+const computerLockDocumentIconElem = document.querySelector('.computer_lock_document_icon')
+const keySectionElem = document.querySelector('.key-section')
+
+const inputPinElem = document.querySelector('.input-pin')
+const answerPinInput = document.querySelector('.answer-pin-input')
+const pinBtn = document.querySelector('.pin-btn')
+const keyMessageElem = document.querySelector('.key-message')
+const pinMessageElem = document.querySelector('.pin-message')
+const errorMessage = document.querySelector('.error-message')
+
 
 profileOfVictimIconElem.addEventListener('click', function() {
   profileOfVictimElem.classList.toggle('display-show')
@@ -144,7 +157,7 @@ answer1Btn.addEventListener('click', function() {
     inputBtn1.classList.add('display-hide')
     states[0] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
-      guessMarderer.classList.remove('display-hide')
+      guessMardererElem.classList.remove('display-hide')
     }
   } else {
     cw1Elem.textContent = cw[1]
@@ -160,7 +173,7 @@ answer2Btn.addEventListener('click', function() {
     inputBtn2.classList.add('display-hide')
     states[1] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
-      guessMarderer.classList.remove('display-hide')
+      guessMardererElem.classList.remove('display-hide')
     }
   } else {
     cw2Elem.textContent = cw[1]
@@ -176,7 +189,7 @@ answer3Btn.addEventListener('click', function() {
     inputBtn3.classList.add('display-hide')
     states[2] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
-      guessMarderer.classList.remove('display-hide')
+      guessMardererElem.classList.remove('display-hide')
     }
 
   } else {
@@ -193,7 +206,7 @@ answer4Btn.addEventListener('click', function() {
     inputBtn4.classList.add('display-hide')
     states[3] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
-      guessMarderer.classList.remove('display-hide')
+      guessMardererElem.classList.remove('display-hide')
     }
 
   } else {
@@ -210,7 +223,7 @@ answer5Btn.addEventListener('click', function() {
     inputBtn5.classList.add('display-hide')
     states[4] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
-      guessMarderer.classList.remove('display-hide')
+      guessMardererElem.classList.remove('display-hide')
     }
 
   } else {
@@ -220,5 +233,27 @@ answer5Btn.addEventListener('click', function() {
 })
 
 mardererInput.addEventListener('input', function() {
-  callMessage.classList.remove('display-hide')
+  callMessageElem.classList.remove('display-hide')
+})
+
+computerLockDocumentIconElem.addEventListener('click', function() {
+  keySectionElem.classList.toggle('display-show')
+})
+
+pinBtn.addEventListener('click', function() {
+  let userPin = Number(answerPinInput.value)
+  if (userPin === pin) {
+    keyMessageElem.classList.remove('display-hide')
+    inputPinElem.classList.add('display-hide')
+    pinMessageElem.textContent = "Read the ending letters of the words!"
+    errorMessage.classList.add('display-hide')
+    mardererBtn.disabled = false
+  } else if (userPin === wrongPin) {
+    keyMessageElem.classList.remove('display-hide')
+    pinMessageElem.textContent = "Read the first letters of the words!"
+    errorMessage.classList.add('display-hide')
+    mardererBtn.disabled = false
+  } else {
+    errorMessage.classList.remove('display-hide')
+  }
 })

@@ -2,7 +2,7 @@
   box-sizing: border-box;
 }
 
-h1, h3, h4, h5, p {
+h1, h2, h3, h4, h5, p {
   margin: 0;
   padding: 0;
 }
@@ -54,6 +54,20 @@ header {
   background-color: aquamarine;
   border: 1px solid blue;
   border-radius: 5px;
+}
+
+.call-message img {
+  display: block;
+  margin: 0 auto;
+}
+
+.key-section img {
+  display: block;
+  margin: 0 auto;
+}
+
+.key-message {
+  text-align: center;
 }
 
 footer {

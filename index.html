@@ -45,7 +45,7 @@
             <img src="image/document_list.png" alt="document_list">
           </div>
           <div class="codes_icon">
-            <img src="image/computer_lock_document.png" alt="computer_lock_document">
+            <img src="image/computer_folder.png" alt="computer_folder">
           </div>
         </div>
       </section>
@@ -55,7 +55,7 @@
         <ul>
           <li>Name: Mike Jones</li>
           <li>Gender: Male</li>
-          <li>Birthday: 3rd Oct 1973</li>
+          <li>Birthday: 23rd Oct 1973</li>
           <li>Birthplace: Australia</li>
           <li>Current city: Sydney</li>
           <li>Occupation: Mathematician</li>
@@ -227,13 +227,34 @@
         <br />
         <p>When you were about to tell who the murderer is to Sherlock, his phone rang.</p>
         <p>Sherlock: "Hello?"</p>
-        <p>Lestrade: "Hi Sherlock, I forgot to tell you. In fact, there is another file in his computer and it looks like a key to find out the murderer. But the file is locked and you need to enter the correct password to open the file. I've sent you the file to you now, so can you check it?"</p>
+        <p>Lestrade: "Hi Sherlock, I forgot to tell you. In fact, there is another file in his computer and it looks like a key to find out the murderer. But the file is locked and you need to enter the correct password to open the file. I've sent you the file to you now, so can you check it?"</p><br />
+        <div class="computer_lock_document_icon">
+          <img src="image/computer_lock_document.png" alt="computer_lock_document"><br />
+        </div>
+      </section>
+
+      <section class="key-section display-hide">
+        <img src="image/pin.jpg" alt="pin">
+        <div class="input-btn input-pin">
+          <input type="number" name="answer-pin-input" class="answer-pin-input">
+          <button class="pin-btn">Submit</button>
+        </div>
+        <div class="key-message display-hide">
+          <p>It looks that you got a correct PIN.</p>
+          <p>The following message appeared.</p>
+          <h2 class="pin-message"></h2>
+        </div>
+        <div class="error-message display-hide">
+          <p>Sherlock: "I don't think the PIN is correct."</p>
+        </div>
+
       </section>
 
       <section class="guess-marderer  display-hide"><!-- display-hide-->
         <h1>Who do you think the murderer is?</h1>
+        <p><small>*Please input his or her full name.</small></p>
         <input type="text" name="marderer-input" class="marderer-input">
-        <button class="marderer-btn">Submit</button>
+        <button class="marderer-btn" disabled>Submit</button>
       </section>
 
   </div>
