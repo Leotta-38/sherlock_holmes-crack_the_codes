@@ -71,6 +71,14 @@ const answer3Elem = document.querySelector('.answer3')
 const message3Elem = document.querySelector('.message3')
 const cw3Elem = document.querySelector('.cw3')
 const inputBtn3 = document.querySelector('.input-btn3')
+const hint3Btn = document.querySelector('.hint3-btn')
+const hint3Elem = document.querySelector('.hint3')
+const hint31Btn = document.querySelector('.hint3-1-btn')
+const hint31Elem = document.querySelector('.hint3-1')
+const hint32Btn = document.querySelector('.hint3-2-btn')
+const hint32Elem = document.querySelector('.hint3-2')
+const hint33Btn = document.querySelector('.hint3-3-btn')
+const hint33Elem = document.querySelector('.hint3-3')
 
 const code4TxtElem = document.querySelector('.code4-txt')
 const code4Wrapperelem = document.querySelector('.code4-wrapper')
@@ -97,6 +105,16 @@ const answer5Elem = document.querySelector('.answer5')
 const message5Elem = document.querySelector('.message5')
 const cw5Elem = document.querySelector('.cw5')
 const inputBtn5 = document.querySelector('.input-btn5')
+const hint5Btn = document.querySelector('.hint5-btn')
+const hint5Elem = document.querySelector('.hint5')
+const hint51Btn = document.querySelector('.hint5-1-btn')
+const hint51Elem = document.querySelector('.hint5-1')
+const hint52Btn = document.querySelector('.hint5-2-btn')
+const hint52Elem = document.querySelector('.hint5-2')
+const hint53Btn = document.querySelector('.hint5-3-btn')
+const hint53Elem = document.querySelector('.hint5-3')
+const hint54Btn = document.querySelector('.hint5-4-btn')
+const hint54Elem = document.querySelector('.hint5-4')
 
 const guessMardererElem = document.querySelector('.guess-marderer')
 
@@ -204,6 +222,22 @@ code3TxtElem.addEventListener('click', function() {
   code3Wrapperelem.classList.toggle('display-show')
 })
 
+hint3Btn.addEventListener('click', function() {
+  hint3Elem.classList.toggle('display-show')
+})
+
+hint31Btn.addEventListener('click', function() {
+  hint31Elem.classList.toggle('display-inline')
+})
+
+hint32Btn.addEventListener('click', function() {
+  hint32Elem.classList.toggle('display-inline')
+})
+
+hint33Btn.addEventListener('click', function() {
+  hint33Elem.classList.toggle('display-inline')
+})
+
 code4TxtElem.addEventListener('click', function() {
   code4Wrapperelem.classList.toggle('display-show')
 })
@@ -226,6 +260,26 @@ hint43Btn.addEventListener('click', function() {
 
 code5TxtElem.addEventListener('click', function() {
   code5Wrapperelem.classList.toggle('display-show')
+})
+
+hint5Btn.addEventListener('click', function() {
+  hint5Elem.classList.toggle('display-show')
+})
+
+hint51Btn.addEventListener('click', function() {
+  hint51Elem.classList.toggle('display-inline')
+})
+
+hint52Btn.addEventListener('click', function() {
+  hint52Elem.classList.toggle('display-inline')
+})
+
+hint53Btn.addEventListener('click', function() {
+  hint53Elem.classList.toggle('display-inline')
+})
+
+hint54Btn.addEventListener('click', function() {
+  hint54Elem.classList.toggle('display-inline')
 })
 
 answer1Btn.addEventListener('click', function() {

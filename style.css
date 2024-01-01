@@ -46,6 +46,10 @@ header {
   text-align: center;
 }
 
+.hint-btn {
+  display: inline-block;
+}
+
 .guess-marderer {
   width: 500px;
   text-align: center;
