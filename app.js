@@ -80,6 +80,14 @@ const answer4Elem = document.querySelector('.answer4')
 const message4Elem = document.querySelector('.message4')
 const cw4Elem = document.querySelector('.cw4')
 const inputBtn4 = document.querySelector('.input-btn4')
+const hint4Btn = document.querySelector('.hint4-btn')
+const hint4Elem = document.querySelector('.hint4')
+const hint41Btn = document.querySelector('.hint4-1-btn')
+const hint41Elem = document.querySelector('.hint4-1')
+const hint42Btn = document.querySelector('.hint4-2-btn')
+const hint42Elem = document.querySelector('.hint4-2')
+const hint43Btn = document.querySelector('.hint4-3-btn')
+const hint43Elem = document.querySelector('.hint4-3')
 
 const code5TxtElem = document.querySelector('.code5-txt')
 const code5Wrapperelem = document.querySelector('.code5-wrapper')
@@ -198,6 +206,22 @@ code3TxtElem.addEventListener('click', function() {
 
 code4TxtElem.addEventListener('click', function() {
   code4Wrapperelem.classList.toggle('display-show')
+})
+
+hint4Btn.addEventListener('click', function() {
+  hint4Elem.classList.toggle('display-show')
+})
+
+hint41Btn.addEventListener('click', function() {
+  hint41Elem.classList.toggle('display-inline')
+})
+
+hint42Btn.addEventListener('click', function() {
+  hint42Elem.classList.toggle('display-inline')
+})
+
+hint43Btn.addEventListener('click', function() {
+  hint43Elem.classList.toggle('display-inline')
 })
 
 code5TxtElem.addEventListener('click', function() {
