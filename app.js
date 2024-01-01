@@ -3,6 +3,7 @@ const cw = ["correct", "wrong"]
 const states = [false, false, false, false, false]
 const pin = 37182813
 const wrongPin = 23101973
+const participants = ["james smith", "graeme connolly", "nahum turner", "aaron nelson", "amelia ramsay", "jessica mcdonald", "eidth walle"]
 
 const profileOfVictimIconElem = document.querySelector('.profile_of_victim_icon')
 const listOfParticipantsIconElem = document.querySelector('.list_of_participants_icon')
@@ -257,3 +258,14 @@ pinBtn.addEventListener('click', function() {
     errorMessage.classList.remove('display-hide')
   }
 })
+
+// mardererBtn.addEventListener('click', function() {
+//   let userMurderer = mardererInput.value.toLowerCase()
+//   if (userMurderer === participants[6]) {
+
+//   } else if (userMurderer === participants[2]) {
+
+//   } else {
+
+//   }
+// })
