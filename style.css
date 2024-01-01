@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+h1, h3, h4, h5, p {
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+header {
+  text-align: center;
+}
+
+.body-wrapper {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.flex-wrapper {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+
+.profile_of_victim, .guests {
+  width: 330px;
+  background-color: antiquewhite;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.guest {
+  padding: 5px;
+}
+
+.code-img {
+  display: block;
+  margin: 10px auto;
+}
+
+.input-btn {
+  text-align: center;
+}
+
+footer {
+  height: 50px;
+}
+
+
+
+
+
+.display-hide {
+  display: none;
+}
+
+.display-show {
+  display: block;
+}
