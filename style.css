@@ -85,3 +85,7 @@ footer {
 .display-show {
   display: block;
 }
+
+.display-inline {
+  display: inline;
+}

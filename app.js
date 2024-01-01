@@ -35,6 +35,14 @@ const answer1Elem = document.querySelector('.answer1')
 const message1Elem = document.querySelector('.message1')
 const cw1Elem = document.querySelector('.cw1')
 const inputBtn1 = document.querySelector('.input-btn1')
+const hint1Btn = document.querySelector('.hint1-btn')
+const hint1Elem = document.querySelector('.hint1')
+const hint11Btn = document.querySelector('.hint1-1-btn')
+const hint11Elem = document.querySelector('.hint1-1')
+const hint12Btn = document.querySelector('.hint1-2-btn')
+const hint12Elem = document.querySelector('.hint1-2')
+const hint13Btn = document.querySelector('.hint1-3-btn')
+const hint13Elem = document.querySelector('.hint1-3')
 
 const code2TxtElem = document.querySelector('.code2-txt')
 const code2Wrapperelem = document.querySelector('.code2-wrapper')
@@ -44,6 +52,16 @@ const answer2Elem = document.querySelector('.answer2')
 const message2Elem = document.querySelector('.message2')
 const cw2Elem = document.querySelector('.cw2')
 const inputBtn2 = document.querySelector('.input-btn2')
+const hint2Btn = document.querySelector('.hint2-btn')
+const hint2Elem = document.querySelector('.hint2')
+const hint21Btn = document.querySelector('.hint2-1-btn')
+const hint21Elem = document.querySelector('.hint2-1')
+const hint22Btn = document.querySelector('.hint2-2-btn')
+const hint22Elem = document.querySelector('.hint2-2')
+const hint23Btn = document.querySelector('.hint2-3-btn')
+const hint23Elem = document.querySelector('.hint2-3')
+const hint24Btn = document.querySelector('.hint2-4-btn')
+const hint24Elem = document.querySelector('.hint2-4')
 
 const code3TxtElem = document.querySelector('.code3-txt')
 const code3Wrapperelem = document.querySelector('.code3-wrapper')
@@ -134,8 +152,44 @@ code1TxtElem.addEventListener('click', function() {
   code1Wrapperelem.classList.toggle('display-show')
 })
 
+hint1Btn.addEventListener('click', function() {
+  hint1Elem.classList.toggle('display-show')
+})
+
+hint11Btn.addEventListener('click', function() {
+  hint11Elem.classList.toggle('display-inline')
+})
+
+hint12Btn.addEventListener('click', function() {
+  hint12Elem.classList.toggle('display-inline')
+})
+
+hint13Btn.addEventListener('click', function() {
+  hint13Elem.classList.toggle('display-inline')
+})
+
 code2TxtElem.addEventListener('click', function() {
   code2Wrapperelem.classList.toggle('display-show')
+})
+
+hint2Btn.addEventListener('click', function() {
+  hint2Elem.classList.toggle('display-show')
+})
+
+hint21Btn.addEventListener('click', function() {
+  hint21Elem.classList.toggle('display-inline')
+})
+
+hint22Btn.addEventListener('click', function() {
+  hint22Elem.classList.toggle('display-inline')
+})
+
+hint23Btn.addEventListener('click', function() {
+  hint23Elem.classList.toggle('display-inline')
+})
+
+hint24Btn.addEventListener('click', function() {
+  hint24Elem.classList.toggle('display-inline')
 })
 
 code3TxtElem.addEventListener('click', function() {
