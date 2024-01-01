@@ -18,22 +18,22 @@
       <p>You are an assistant who works at Sherlock's office.</p>
       <p>When you were making a coffee in the morning, a well-known police officer rushed into the office.</p><br/>
 
-      <p>Inspector: "Hi Sharlock! Are you here?"</p>
-      <p>Sherlock: "What's the matter with you in such a hurry?"</p>
-      <p>Inspector: "There was a murder in Sydney the other day, but we're having a hard time finding out who did it."</p>
+      <p>Lestrade: "Hi Sherlock! Are you here?"</p>
+      <p>Sherlock: "Why are you in such a hurry?"</p>
+      <p>Lestrade: "There was a murder in Sydney the other day, but we're having a hard time finding out who did it."</p>
       <p>Sherlock: "Tell me more about it."</p>
-      <p>Inspector: "Mike, a genius mathematician, was poisoned during his birthday party. But in fact, he knew that someone was after his life, and he had secretly left information about that person on his computer in case something happened to him."</p>
+      <p>Lestrade: "Mike, a genius mathematician, was poisoned during his birthday party. But in fact, he knew that someone was after his life, and he had secretly left information about that person on his computer in case something happened to him."</p>
       <p>Sherlock: "Then, your job sounds pretty easy."</p>
-      <p>Inspector: "But somehow he had that information encrypted."</p>
+      <p>Lestrade: "But somehow he had that information encrypted."</p>
       <p>Sherlock: "Encrypted?"</p>
-      <p>Inspector: "Yes, we are struggling to crack that codes and need your help."</p>
+      <p>Lestrade: "Yes, we are struggling to crack the codes and need your help."</p>
       <p>Sherlock: "I see."</p>
-      <p>Inspector: "Here is the codes left in his computer. In addition, we believe it is very likely that the murderer is a participant in that party based on the circumstances. I'll give you a list of the participants."</p><br />
+      <p>Lestrade: "Here are the codes he left in his computer. Also, we believe it is very likely that the murderer is a participant at the party. I'll give you a list of the participants."</p><br />
 
-      <p>Inspector put some documents on the desk and left the office in a hurry.</p>
+      <p>Lestrade put some documents on the desk and left the office in a hurry.</p>
       <p>Sherlock looked over those documents and said to you.</p><br />
 
-      <p>Sherlock: "This is interesting. Why don't you find who the murderer is with me?"</p><br />
+      <p>Sherlock: "This is interesting. Do you want to find who the murderer is with me?"</p><br />
       </section>
 
       <section>
@@ -223,11 +223,19 @@
         </div>
       </section>
 
-      <section class="guess-marderer display-hide">
-        <p>Who is the murderer?</p>
-        <input type="text" name="" id="">
-        <button>Submit</button>
+      <section class="call-message display-hide">
+        <br />
+        <p>When you were about to tell who the murderer is to Sherlock, his phone rang.</p>
+        <p>Sherlock: "Hello?"</p>
+        <p>Lestrade: "Hi Sherlock, I forgot to tell you. In fact, there is another file in his computer and it looks like a key to find out the murderer. But the file is locked and you need to enter the correct password to open the file. I've sent you the file to you now, so can you check it?"</p>
       </section>
+
+      <section class="guess-marderer  display-hide"><!-- display-hide-->
+        <h1>Who do you think the murderer is?</h1>
+        <input type="text" name="marderer-input" class="marderer-input">
+        <button class="marderer-btn">Submit</button>
+      </section>
+
   </div>
 
   <footer>

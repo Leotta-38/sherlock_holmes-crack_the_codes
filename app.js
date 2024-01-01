@@ -71,6 +71,11 @@ const inputBtn5 = document.querySelector('.input-btn5')
 
 const guessMarderer = document.querySelector('.guess-marderer')
 
+const mardererInput = document.querySelector('.marderer-input')
+const mardererBtn = document.querySelector('.marderer-btn')
+
+const callMessage = document.querySelector('.call-message')
+
 profileOfVictimIconElem.addEventListener('click', function() {
   profileOfVictimElem.classList.toggle('display-show')
 })
@@ -212,4 +217,8 @@ answer5Btn.addEventListener('click', function() {
     cw5Elem.textContent = cw[1]
   }
   message5Elem.classList.remove('display-hide')
+})
+
+mardererInput.addEventListener('input', function() {
+  callMessage.classList.remove('display-hide')
 })
