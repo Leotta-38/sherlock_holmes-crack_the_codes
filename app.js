@@ -116,6 +116,7 @@ const hint53Elem = document.querySelector('.hint5-3')
 const hint54Btn = document.querySelector('.hint5-4-btn')
 const hint54Elem = document.querySelector('.hint5-4')
 
+const afterCrackCodesElem = document.querySelector('.after-crack-codes')
 const guessMardererElem = document.querySelector('.guess-marderer')
 
 const mardererInput = document.querySelector('.marderer-input')
@@ -129,6 +130,19 @@ const keySectionElem = document.querySelector('.key-section')
 const inputPinElem = document.querySelector('.input-pin')
 const answerPinInput = document.querySelector('.answer-pin-input')
 const pinBtn = document.querySelector('.pin-btn')
+const hintPinBtn = document.querySelector('.hint-pin-btn')
+const hintPinElem = document.querySelector('.hint-pin')
+const hintPin1Btn = document.querySelector('.hint-pin1-btn')
+const hintPin1Elem = document.querySelector('.hint-pin1')
+const hintPin2Btn = document.querySelector('.hint-pin2-btn')
+const hintPin2Elem = document.querySelector('.hint-pin2')
+const hintPin3Btn = document.querySelector('.hint-pin3-btn')
+const hintPin3Elem = document.querySelector('.hint-pin3')
+const hintPin4Btn = document.querySelector('.hint-pin4-btn')
+const hintPin4Elem = document.querySelector('.hint-pin4')
+const hintPin5Btn = document.querySelector('.hint-pin5-btn')
+const hintPin5Elem = document.querySelector('.hint-pin5')
+
 const keyMessageElem = document.querySelector('.key-message')
 const pinMessageElem = document.querySelector('.pin-message')
 const errorMessage = document.querySelector('.error-message')
@@ -290,6 +304,7 @@ answer1Btn.addEventListener('click', function() {
     inputBtn1.classList.add('display-hide')
     states[0] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+      afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
   } else {
@@ -306,6 +321,7 @@ answer2Btn.addEventListener('click', function() {
     inputBtn2.classList.add('display-hide')
     states[1] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+      afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
   } else {
@@ -322,6 +338,7 @@ answer3Btn.addEventListener('click', function() {
     inputBtn3.classList.add('display-hide')
     states[2] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+      afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
 
@@ -339,6 +356,7 @@ answer4Btn.addEventListener('click', function() {
     inputBtn4.classList.add('display-hide')
     states[3] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+      afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
 
@@ -356,6 +374,7 @@ answer5Btn.addEventListener('click', function() {
     inputBtn5.classList.add('display-hide')
     states[4] = true
     if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+      afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
 
@@ -366,11 +385,38 @@ answer5Btn.addEventListener('click', function() {
 })
 
 mardererInput.addEventListener('input', function() {
-  callMessageElem.classList.remove('display-hide')
+  let usermarder = mardererInput.value.toLowerCase()
+  if (usermarder === participants[0]) {
+    callMessageElem.classList.remove('display-hide')
+  }
 })
 
 computerLockDocumentIconElem.addEventListener('click', function() {
   keySectionElem.classList.toggle('display-show')
+})
+
+hintPinBtn.addEventListener('click', function() {
+  hintPinElem.classList.toggle('display-show')
+})
+
+hintPin1Btn.addEventListener('click', function() {
+  hintPin1Elem.classList.toggle('display-inline')
+})
+
+hintPin2Btn.addEventListener('click', function() {
+  hintPin2Elem.classList.toggle('display-inline')
+})
+
+hintPin3Btn.addEventListener('click', function() {
+  hintPin3Elem.classList.toggle('display-inline')
+})
+
+hintPin4Btn.addEventListener('click', function() {
+  hintPin4Elem.classList.toggle('display-inline')
+})
+
+hintPin5Btn.addEventListener('click', function() {
+  hintPin5Elem.classList.toggle('display-inline')
 })
 
 pinBtn.addEventListener('click', function() {
