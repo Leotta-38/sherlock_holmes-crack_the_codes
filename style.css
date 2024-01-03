@@ -74,6 +74,16 @@ header {
   text-align: center;
 }
 
+.pin-message {
+  display: inline-block;
+  background-color: #efefef;
+  padding: 10px;
+}
+
+.hint-for-murderer {
+  text-align: center;
+}
+
 footer {
   height: 50px;
 }

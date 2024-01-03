@@ -209,8 +209,8 @@
             <p class="hint3-btn hint-btn">hint</p>
             <div class="hint3 display-hide">
               <p class="hint3-1-btn hint-btn">hint 1: <span class="hint3-1 display-hide">Use the upper figure as a reference.</span></p><br />
-              <p class="hint3-2-btn hint-btn">hint 2: <span class="hint3-2 display-hide">What is missing in the lower figures compared to the upper one.</span></p><br />
-              <p class="hint3-3-btn hint-btn">hint 3: <span class="hint3-3 display-hide">The first figure represents "H".</span></p><br />
+              <p class="hint3-2-btn hint-btn">hint 2: <span class="hint3-2 display-hide">The first figure represents "H".</span></p><br />
+              <p class="hint3-3-btn hint-btn">hint 3: <span class="hint3-3 display-hide">What is missing in the lower figures compared to the upper one.</span></p><br />
             </div>
           </div>
           <div class="messages message3 display-hide">
@@ -283,39 +283,87 @@
           <button class="pin-btn">Submit</button><br />
           <p class="hint-pin-btn hint-btn">hint</p>
           <div class="hint-pin display-hide">
-            <p class="hint-pin1-btn hint-btn">hint 1: <span class="hint-pin1 display-hide">(Not yet finished)</span></p><br />
-            <p class="hint-pin2-btn hint-btn">hint 2: <span class="hint-pin2 display-hide">(Not yet finished)</span></p><br />
-            <p class="hint-pin3-btn hint-btn">hint 3: <span class="hint-pin3 display-hide">(Not yet finished)</span></p><br />
-            <p class="hint-pin4-btn hint-btn">hint 4: <span class="hint-pin4 display-hide">(Not yet finished)</span></p><br />
-            <p class="hint-pin5-btn hint-btn">hint 5: <span class="hint-pin5 display-hide">(Not yet finished)</span></p><br />
+            <p class="hint-pin-i-btn hint-btn">hint 1: <span class="display-hide">Think about why there is "?" at the end of the sequence.</span></p><br />
+            <p class="hint-pin-i-btn hint-btn">hint 2: <span class="display-hide">Convert each number to an alphabet.</span></p><br />
+            <p class="hint-pin-i-btn hint-btn">hint 3: <span class="display-hide">Each number indicates the number in alphabetical order.</span></p><br />
+            <p class="hint-pin-i-btn hint-btn">hint 4: <span class="display-hide">The sequence means "Who am I?" Is there anything in the victim's profile that would help us identify the PIN?</span></p><br />
+            <p class="hint-pin-i-btn hint-btn">hint 5: <span class="display-hide">The sequence is written in Italic. Have you seen any other words in Italic?</span></p><br />
+            <p class="hint-pin-i-btn hint-btn">hint 6: <span class="display-hide">His name is Mike. Convert his name to numbers by using the "Code 2" pattern.</span></p><br />
           </div>
-
         </div>
+
         <div class="key-message display-hide">
-          <p>It looks that you got a correct PIN.</p>
+          <br />
           <p>The following message appeared.</p>
           <h2 class="pin-message"></h2>
         </div>
         <div class="error-message display-hide">
-          <p>Sherlock: "I don't think the PIN is correct."</p>
+          <p>Nothing happened...</p>
+          <p>Sherlock: "The PIN seems to be incorrect."</p>
         </div>
       </section>
 
+      <section> 
+        <div class="final-message display-hide">
+          <br />
+          <p>Sherlock: "Hmm... What does this message mean? Maybe, this is the final clue to identify the murderer. Let's crack this code!"</p>
+        </div>
+      </section>
+        
       <section class="guess-marderer display-hide"><!-- display-hide-->
         <h1>Who do you think the murderer is?</h1>
         <p><small>*Please input his or her full name.</small></p>
         <input type="text" name="marderer-input" class="marderer-input">
-        <button class="marderer-btn" disabled>Submit</button>
+        <button class="marderer-btn">Submit</button>
       </section>
 
-      <section class="ending display-hide">
-        <p>Sherlock: ""</p>
+      <section class="hint-for-murderer display-hide">
+        <p class="hint-murderer-btn hint-btn">hint</p>
+        <div class="hint-murderer display-hide">
+          <p class="hint-murderer-i-btn hint-btn">hint 1: <span class="display-hide">(Not yet finished)</span></p><br />
+          <p class="hint-murderer-i-btn hint-btn">hint 2: <span class="display-hide">(Not yet finished)</span></p><br />
+          <p class="hint-murderer-i-btn hint-btn">hint 3: <span class="display-hide">(Not yet finished)</span></p><br />
+          <p class="hint-murderer-i-btn hint-btn">hint 4: <span class="display-hide">(Not yet finished)</span></p><br />
+          <p class="hint-murderer-i-btn hint-btn">hint 5: <span class="display-hide">(Not yet finished)</span></p><br />
+          <p class="hint-murderer-i-btn hint-btn">hint 6: <span class="display-hide">(Not yet finished)</span></p><br />
+        </div>
+      </section>
+
+      <section>
+        <br />
+        <p class="error"></p>
+      </section>
+
+      <section>
+        <div class="ending-1 display-hide">
+          <br />
+          <p>Sherlock: "Hi, Lestrade. Based on all the clues we got by cracking the codes, Nahum Turner is the most suspicious."</p>
+          <p>Lestrade: "What!? But it can't be true, unfortunatelly."</p>
+          <p>Sherlock: "How come?"</p>
+          <p>Lestrade: "It's become clear that he had a perfect alibi right now! It's impossible for him to commit the murder."</p>
+          <p>Sherlock: "Does that mean our reasoning is wrong?"</p>
+          <p>Lestrade: "Yes, he is definitely not the murderer."</p>
+          <br />
+          <p>Apparently, you identified the wrong person as the murderer.</p>
+          <p>Let's try to think about it again.</p>
+        </div>
+        <div class="ending-2 display-hide">
+          <br />
+          <p>Sherlock: "Hi, Lestrade. All the clues we got by cracking the codes indicate Eidth Walle must be the murderer."</p>
+          <p>Lestrade: "OK, then we will arrest her ASAP! Thanks for your cooporation."</p>
+          <br />
+          <p>She confessed to her crime and the case was closed.</p>
+          <p>The reason seems to be a tangle of affection between a man and a woman.</p>
+          <p>Nevertheless, why Mike encrypted the information that identifies her so tightly is a mystery to the end.</p>
+          <p>Perhaps he did not want to suspect her and did not want anyone to crack the codes...</p>
+          <br />
+          <h1>Congratulations! You cleared!</h1>
+        </div>
       </section>
 
   </div>
 
   <footer>
-
   </footer>
   
 </body>

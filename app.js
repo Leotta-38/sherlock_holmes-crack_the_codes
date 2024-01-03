@@ -1,9 +1,11 @@
 const answers = ["nsw", "australia", "hospital", "useful", "male"]
 const cw = ["correct", "wrong"]
-const states = [false, false, false, false, false]
-const pin = 37182813
-const wrongPin = 23101973
+let codesStatus = [false, false, false, false, false]
+const pin = [37182813, 23101973]
 const participants = ["james smith", "graeme connolly", "nahum turner", "aaron nelson", "amelia ramsay", "jessica mcdonald", "eidth walle"]
+let pinClear = [false, false]
+const sherlockComments = ['Sherlock: "Who is that? The murderer should be one of the participants of the party."', 'Sherlock: "We haven not got all the clues to identify the murderer yet. We should crack the code left first."', 'Sherlock: "No, I do not think he is the murderer because of the message we got when we entered the PIN."', 'Sherlock: "OK. I will tell it to Lestrade."', 'Sherlock: "There is no clue that implies the person is the murderer so far."']
+
 
 const profileOfVictimIconElem = document.querySelector('.profile_of_victim_icon')
 const listOfParticipantsIconElem = document.querySelector('.list_of_participants_icon')
@@ -132,21 +134,21 @@ const answerPinInput = document.querySelector('.answer-pin-input')
 const pinBtn = document.querySelector('.pin-btn')
 const hintPinBtn = document.querySelector('.hint-pin-btn')
 const hintPinElem = document.querySelector('.hint-pin')
-const hintPin1Btn = document.querySelector('.hint-pin1-btn')
-const hintPin1Elem = document.querySelector('.hint-pin1')
-const hintPin2Btn = document.querySelector('.hint-pin2-btn')
-const hintPin2Elem = document.querySelector('.hint-pin2')
-const hintPin3Btn = document.querySelector('.hint-pin3-btn')
-const hintPin3Elem = document.querySelector('.hint-pin3')
-const hintPin4Btn = document.querySelector('.hint-pin4-btn')
-const hintPin4Elem = document.querySelector('.hint-pin4')
-const hintPin5Btn = document.querySelector('.hint-pin5-btn')
-const hintPin5Elem = document.querySelector('.hint-pin5')
+const hintPinIBtnArrays = document.querySelectorAll('.hint-pin-i-btn')
+const hintForMurdererElem = document.querySelector('.hint-for-murderer')
+
+const hintMurdererBtn = document.querySelector('.hint-murderer-btn')
+const hintMurdererElem = document.querySelector('.hint-murderer')
+const hintMurdererIBtnArrays = document.querySelectorAll('.hint-murderer-i-btn')
 
 const keyMessageElem = document.querySelector('.key-message')
 const pinMessageElem = document.querySelector('.pin-message')
-const errorMessage = document.querySelector('.error-message')
+const errorMessageElem = document.querySelector('.error-message')
+const finalMessageElem = document.querySelector('.final-message')
 
+const errorElem =document.querySelector('.error')
+const ending1Elem = document.querySelector('.ending-1')
+const ending2Elem = document.querySelector('.ending-2')
 
 profileOfVictimIconElem.addEventListener('click', function() {
   profileOfVictimElem.classList.toggle('display-show')
@@ -302,8 +304,8 @@ answer1Btn.addEventListener('click', function() {
   if (answer1.toLowerCase() === answers[0]) {
     cw1Elem.textContent = cw[0]
     inputBtn1.classList.add('display-hide')
-    states[0] = true
-    if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+    codesStatus[0] = true
+    if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
@@ -319,8 +321,8 @@ answer2Btn.addEventListener('click', function() {
   if (answer2.toLowerCase() === answers[1]) {
     cw2Elem.textContent = cw[0]
     inputBtn2.classList.add('display-hide')
-    states[1] = true
-    if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+    codesStatus[1] = true
+    if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
@@ -336,8 +338,8 @@ answer3Btn.addEventListener('click', function() {
   if (answer3.toLowerCase() === answers[2]) {
     cw3Elem.textContent = cw[0]
     inputBtn3.classList.add('display-hide')
-    states[2] = true
-    if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+    codesStatus[2] = true
+    if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
@@ -354,8 +356,8 @@ answer4Btn.addEventListener('click', function() {
   if (answer4.toLowerCase() === answers[3]) {
     cw4Elem.textContent = cw[0]
     inputBtn4.classList.add('display-hide')
-    states[3] = true
-    if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+    codesStatus[3] = true
+    if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
@@ -372,8 +374,8 @@ answer5Btn.addEventListener('click', function() {
   if (answer5.toLowerCase() === answers[4]) {
     cw5Elem.textContent = cw[0]
     inputBtn5.classList.add('display-hide')
-    states[4] = true
-    if (states[0] === true && states[1] === true && states[2] === true && states[3] === true && states[4] === true) {
+    codesStatus[4] = true
+    if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
       guessMardererElem.classList.remove('display-hide')
     }
@@ -385,10 +387,7 @@ answer5Btn.addEventListener('click', function() {
 })
 
 mardererInput.addEventListener('input', function() {
-  let usermarder = mardererInput.value.toLowerCase()
-  if (usermarder === participants[0]) {
-    callMessageElem.classList.remove('display-hide')
-  }
+  callMessageElem.classList.remove('display-hide')
 })
 
 computerLockDocumentIconElem.addEventListener('click', function() {
@@ -399,51 +398,72 @@ hintPinBtn.addEventListener('click', function() {
   hintPinElem.classList.toggle('display-show')
 })
 
-hintPin1Btn.addEventListener('click', function() {
-  hintPin1Elem.classList.toggle('display-inline')
-})
-
-hintPin2Btn.addEventListener('click', function() {
-  hintPin2Elem.classList.toggle('display-inline')
-})
-
-hintPin3Btn.addEventListener('click', function() {
-  hintPin3Elem.classList.toggle('display-inline')
-})
-
-hintPin4Btn.addEventListener('click', function() {
-  hintPin4Elem.classList.toggle('display-inline')
-})
-
-hintPin5Btn.addEventListener('click', function() {
-  hintPin5Elem.classList.toggle('display-inline')
-})
+for (let eachHint of hintPinIBtnArrays) {
+  eachHint.addEventListener('click', function() {
+    eachHint.childNodes[1].classList.toggle('display-inline')
+  })
+}
 
 pinBtn.addEventListener('click', function() {
   let userPin = Number(answerPinInput.value)
-  if (userPin === pin) {
+  if (userPin === pin[0]) {
     keyMessageElem.classList.remove('display-hide')
     inputPinElem.classList.add('display-hide')
     pinMessageElem.textContent = "Read the ending letters of the words!"
-    errorMessage.classList.add('display-hide')
-    mardererBtn.disabled = false
-  } else if (userPin === wrongPin) {
+    errorMessageElem.classList.add('display-hide')
+    finalMessageElem.classList.remove('display-hide')
+    hintForMurdererElem.classList.remove('display-hide')
+    pinClear[0] = true
+    pinClear[1] = true
+  } else if (userPin === pin[1]) {
     keyMessageElem.classList.remove('display-hide')
     pinMessageElem.textContent = "Read the first letters of the words!"
-    errorMessage.classList.add('display-hide')
-    mardererBtn.disabled = false
+    errorMessageElem.classList.add('display-hide')
+    finalMessageElem.classList.remove('display-hide')
+    hintForMurdererElem.classList.remove('display-hide')
+    pinClear[0] = true
   } else {
-    errorMessage.classList.remove('display-hide')
+    errorMessageElem.classList.remove('display-hide')
   }
 })
 
-// mardererBtn.addEventListener('click', function() {
-//   let userMurderer = mardererInput.value.toLowerCase()
-//   if (userMurderer === participants[6]) {
+hintMurdererBtn.addEventListener('click', function() {
+  hintMurdererElem.classList.toggle('display-show')
+})
 
-//   } else if (userMurderer === participants[2]) {
+for (let eachHint of hintMurdererIBtnArrays) {
+  eachHint.addEventListener('click', function() {
+    eachHint.childNodes[1].classList.toggle('display-inline')
+  })
+}
 
-//   } else {
-
-//   }
-// })
+mardererBtn.addEventListener('click', function() {
+  let userMarderer = mardererInput.value.toLowerCase()
+  if (!participants.includes(userMarderer)) {
+    errorElem.textContent = sherlockComments[0]
+    ending1Elem.classList.remove('display-show')
+  } else {
+    if (!pinClear[0]) {
+      errorElem.textContent = sherlockComments[1]
+    } else {
+      if (userMarderer === participants[0]) {
+        errorElem.textContent = sherlockComments[2]
+        ending1Elem.classList.remove('display-show')
+      } else if (userMarderer === participants[2]) {
+        errorElem.textContent = sherlockComments[3]
+        setTimeout(function() {
+          ending1Elem.classList.add('display-show')
+        }, 2000)
+      } else if (userMarderer === participants[6] && pinClear[1]) {
+        errorElem.textContent = sherlockComments[3]
+        ending1Elem.classList.add('display-hide')
+        setTimeout(function() {
+          ending2Elem.classList.remove('display-hide')
+        }, 2000)
+      } else {
+        errorElem.textContent = sherlockComments[4]
+        ending1Elem.classList.remove('display-show')
+      }
+    }
+  }
+})
