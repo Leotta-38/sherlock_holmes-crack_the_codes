@@ -140,6 +140,8 @@ const hintForMurdererElem = document.querySelector('.hint-for-murderer')
 const hintMurdererBtn = document.querySelector('.hint-murderer-btn')
 const hintMurdererElem = document.querySelector('.hint-murderer')
 const hintMurdererIBtnArrays = document.querySelectorAll('.hint-murderer-i-btn')
+const firstLettersElem = document.querySelector('.first-letters')
+const lastLettersElem = document.querySelector('.last-letters')
 
 const keyMessageElem = document.querySelector('.key-message')
 const pinMessageElem = document.querySelector('.pin-message')
@@ -409,10 +411,12 @@ pinBtn.addEventListener('click', function() {
   if (userPin === pin[0]) {
     keyMessageElem.classList.remove('display-hide')
     inputPinElem.classList.add('display-hide')
-    pinMessageElem.textContent = "Read the ending letters of the words!"
+    pinMessageElem.textContent = "Read the last letters of the words!"
     errorMessageElem.classList.add('display-hide')
     finalMessageElem.classList.remove('display-hide')
     hintForMurdererElem.classList.remove('display-hide')
+    lastLettersElem.classList.add('display-show')
+    firstLettersElem.classList.remove('display-show')
     pinClear[0] = true
     pinClear[1] = true
   } else if (userPin === pin[1]) {
@@ -421,6 +425,8 @@ pinBtn.addEventListener('click', function() {
     errorMessageElem.classList.add('display-hide')
     finalMessageElem.classList.remove('display-hide')
     hintForMurdererElem.classList.remove('display-hide')
+    lastLettersElem.classList.remove('display-show')
+    firstLettersElem.classList.add('display-show')
     pinClear[0] = true
   } else {
     errorMessageElem.classList.remove('display-hide')
@@ -456,7 +462,7 @@ mardererBtn.addEventListener('click', function() {
         }, 2000)
       } else if (userMarderer === participants[6] && pinClear[1]) {
         errorElem.textContent = sherlockComments[3]
-        ending1Elem.classList.add('display-hide')
+        ending1Elem.classList.remove('display-show')
         setTimeout(function() {
           ending2Elem.classList.remove('display-hide')
         }, 2000)
