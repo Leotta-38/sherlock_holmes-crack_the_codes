@@ -2,9 +2,9 @@ const answers = ["nsw", "australia", "hospital", "useful", "male"]
 const cw = ["correct", "wrong"]
 let codesStatus = [false, false, false, false, false]
 const pin = [37182813, 23101973]
-const participants = ["james smith", "graeme connolly", "nahum turner", "aaron nelson", "amelia ramsay", "jessica mcdonald", "eidth walle"]
+const participants = ["james smith", "graeme connolly", "nahum turner", "aaron nelson", "amelia ramsay", "jessica mcdonald", "edith walle"]
 let pinClear = [false, false]
-const sherlockComments = ['Sherlock: "Who is that? The murderer should be one of the participants of the party."', 'Sherlock: "We haven not got all the clues to identify the murderer yet. We should crack the code left first."', 'Sherlock: "No, I do not think he is the murderer because of the message we got when we entered the PIN."', 'Sherlock: "OK. I will tell it to Lestrade."', 'Sherlock: "There is no clue that implies the person is the murderer so far."']
+const sherlockComments = ['Sherlock: "Who is that? The murderer should be one of the participants of the party."', 'Sherlock: "We have not got all the clues to identify the murderer yet. We should crack the code left first."', 'Sherlock: "No, I do not think he is the murderer because of the message we got when we entered the PIN."', 'Sherlock: "OK. I will tell it to Lestrade."', 'Sherlock: "There is no clue that implies the person is the murderer so far."']
 
 
 const profileOfVictimIconElem = document.querySelector('.profile_of_victim_icon')
