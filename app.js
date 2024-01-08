@@ -4,7 +4,7 @@ let codesStatus = [false, false, false, false, false]
 const pin = [37182813, 23101973]
 const participants = ["james smith", "graeme connolly", "nahum turner", "aaron nelson", "amelia ramsay", "jessica mcdonald", "edith walle"]
 let pinClear = [false, false]
-const sherlockComments = ['Sherlock: "Who is that? The murderer should be one of the participants of the party."', 'Sherlock: "We have not got all the clues to identify the murderer yet. We should crack the code left first."', 'Sherlock: "No, I do not think he is the murderer because of the message we got when we entered the PIN."', 'Sherlock: "OK. I will tell it to Lestrade."', 'Sherlock: "There is no clue that implies the person is the murderer so far."']
+const sherlockComments = ['Sherlock: "Who is that? The murderer should be one of the participants at the party."', 'Sherlock: "We have not got all the clues to identify the murderer yet. We should figure out the PIN first."', 'Sherlock: "No, I do not think he is the murderer because of the message we got when we entered the PIN."', 'Sherlock: "OK. I will let Lestrade know."', 'Sherlock: "There is no clue that implies this person is the murderer so far."']
 
 
 const profileOfVictimIconElem = document.querySelector('.profile_of_victim_icon')
@@ -119,10 +119,10 @@ const hint54Btn = document.querySelector('.hint5-4-btn')
 const hint54Elem = document.querySelector('.hint5-4')
 
 const afterCrackCodesElem = document.querySelector('.after-crack-codes')
-const guessMardererElem = document.querySelector('.guess-marderer')
+const guessMurdererElem = document.querySelector('.guess-murderer')
 
-const mardererInput = document.querySelector('.marderer-input')
-const mardererBtn = document.querySelector('.marderer-btn')
+const MurdererInput = document.querySelector('.murderer-input')
+const MurdererBtn = document.querySelector('.murderer-btn')
 
 const callMessageElem = document.querySelector('.call-message')
 
@@ -309,7 +309,7 @@ answer1Btn.addEventListener('click', function() {
     codesStatus[0] = true
     if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
-      guessMardererElem.classList.remove('display-hide')
+      guessMurdererElem.classList.remove('display-hide')
     }
   } else {
     cw1Elem.textContent = cw[1]
@@ -326,7 +326,7 @@ answer2Btn.addEventListener('click', function() {
     codesStatus[1] = true
     if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
-      guessMardererElem.classList.remove('display-hide')
+      guessMurdererElem.classList.remove('display-hide')
     }
   } else {
     cw2Elem.textContent = cw[1]
@@ -343,7 +343,7 @@ answer3Btn.addEventListener('click', function() {
     codesStatus[2] = true
     if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
-      guessMardererElem.classList.remove('display-hide')
+      guessMurdererElem.classList.remove('display-hide')
     }
 
   } else {
@@ -361,7 +361,7 @@ answer4Btn.addEventListener('click', function() {
     codesStatus[3] = true
     if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
-      guessMardererElem.classList.remove('display-hide')
+      guessMurdererElem.classList.remove('display-hide')
     }
 
   } else {
@@ -379,7 +379,7 @@ answer5Btn.addEventListener('click', function() {
     codesStatus[4] = true
     if (codesStatus[0] === true && codesStatus[1] === true && codesStatus[2] === true && codesStatus[3] === true && codesStatus[4] === true) {
       afterCrackCodesElem.classList.remove('display-hide')
-      guessMardererElem.classList.remove('display-hide')
+      guessMurdererElem.classList.remove('display-hide')
     }
 
   } else {
@@ -388,7 +388,7 @@ answer5Btn.addEventListener('click', function() {
   message5Elem.classList.remove('display-hide')
 })
 
-mardererInput.addEventListener('input', function() {
+MurdererInput.addEventListener('input', function() {
   callMessageElem.classList.remove('display-hide')
 })
 
@@ -443,29 +443,25 @@ for (let eachHint of hintMurdererIBtnArrays) {
   })
 }
 
-mardererBtn.addEventListener('click', function() {
-  let userMarderer = mardererInput.value.toLowerCase()
-  if (!participants.includes(userMarderer)) {
+MurdererBtn.addEventListener('click', function() {
+  let userMurderer = MurdererInput.value.toLowerCase()
+  if (!participants.includes(userMurderer)) {
     errorElem.textContent = sherlockComments[0]
     ending1Elem.classList.remove('display-show')
   } else {
     if (!pinClear[0]) {
       errorElem.textContent = sherlockComments[1]
     } else {
-      if (userMarderer === participants[0]) {
+      if (userMurderer === participants[0]) {
         errorElem.textContent = sherlockComments[2]
         ending1Elem.classList.remove('display-show')
-      } else if (userMarderer === participants[2]) {
+      } else if (userMurderer === participants[2]) {
         errorElem.textContent = sherlockComments[3]
-        setTimeout(function() {
-          ending1Elem.classList.add('display-show')
-        }, 2000)
-      } else if (userMarderer === participants[6] && pinClear[1]) {
+        ending1Elem.classList.add('display-show')
+      } else if (userMurderer === participants[6] && pinClear[1]) {
         errorElem.textContent = sherlockComments[3]
         ending1Elem.classList.remove('display-show')
-        setTimeout(function() {
           ending2Elem.classList.remove('display-hide')
-        }, 2000)
       } else {
         errorElem.textContent = sherlockComments[4]
         ending1Elem.classList.remove('display-show')
