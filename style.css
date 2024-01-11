@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Lemon&family=Nothing+You+Could+Do&family=Salsa&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,15 +11,94 @@ h1, h2, h3, h4, h5, p {
 
 ul {
   margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+section {
+  margin: 30px 0;
+}
+
+body {
+  background-color: mistyrose;
+  font-family: 'Salsa', cursive;
+  font-size: 18px;
+}
+
+img {
+  display: block;
 }
 
 header {
   text-align: center;
+  font-family: 'Lemon', serif;
+  margin: 40px 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 30px;
+}
+
+h3 {
+  font-size: 25px;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+input {
+  width: 200px;
+  padding: 7px;
+  margin: 10px;
+  color: #222;
+  border-radius: 5px;
+  border: 1px solid #666;
+}
+
+button {
+  margin: 10px auto;
+  padding: 7px 15px;
+  border-radius: 10px;
+  border: 1px solid #555;
+  background-color: #efefef;
+  opacity: 0.8;
+  cursor: pointer;
+  transition: 0.3s;
+  box-shadow: 0 4px #555;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+button:active {
+  position: relative;
+  top: 4px;
+  box-shadow: none;
 }
 
 .body-wrapper {
   width: 80%;
   margin: 0 auto;
+}
+
+.talks {
+  line-height: 1.5em;
+  text-indent: -5em;
+  padding-left: 5em;
+}
+
+.lestrade:before {
+  content: "Lestrade: ";
+}
+
+.sherlock:before {
+  content: "Sherlock: ";
 }
 
 .flex-wrapper {
@@ -26,28 +107,85 @@ header {
   text-align: center;
 }
 
-.profile_of_victim, .guests {
-  width: 330px;
-  background-color: antiquewhite;
-  margin: 20px auto;
-  padding: 10px;
+.icon:hover {
+  cursor: pointer;
 }
 
-.guest {
-  padding: 5px;
+.profile_of_victim, .list_of_participants {
+  width: 450px;
+  background-color: #fff;
+  border: solid 2px #999;
+  border-radius: 5px;
+  margin: 30px auto;
+  padding: 0.5em 1em 0 2em;
+  position: relative;
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.profile_of_victim li, .list_of_participants li {
+  border-bottom: dashed 1px #ccc;
+  line-height: 1.5;
+  padding: 0.2em 0;
+  margin: 0;
+}
+
+.profile_of_victim li:last-of-type, .list_of_participants li:last-of-type {
+  border-bottom: none;
+}
+
+.profile_of_victim::before, .list_of_participants::before {
+  content: "";
+  position: absolute;
+  border-right: dotted 10px #ddd;
+  height: 97%;
+  left: 0.5em;
+}
+
+.profile_of_victim h4, .list_of_participants h4, .participant {
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+.participant {
+  display: block;
+  font-weight: bold;
+}
+
+.participant:hover {
+  cursor: pointer;
+}
+
+.code-title {
+  font-size: 20px;
+  display: inline-block;
+  margin-bottom: 5px;
+}
+
+.code-title:hover {
+  cursor: pointer;
 }
 
 .code-img {
   display: block;
+  max-width: 100%;
   margin: 10px auto;
 }
 
-.input-btn {
+.code div:nth-child(2) {
   text-align: center;
 }
 
-.hint-btn {
+.hint-block, .hint-line {
   display: inline-block;
+}
+
+.hint-block:hover, .hint-line:hover {
+  cursor: pointer;
+}
+
+.hint-line img {
+  display: inline;
+  height: 40px;
 }
 
 .guess-murderer {
@@ -56,8 +194,12 @@ header {
   margin: 15px auto;
   padding: 10px;
   background-color: aquamarine;
-  border: 1px solid blue;
+  border: 1px solid green;
   border-radius: 5px;
+}
+
+.guess-murderer p {
+  font-size: 15px;
 }
 
 .call-message img {
@@ -65,22 +207,31 @@ header {
   margin: 0 auto;
 }
 
-.key-section img {
-  display: block;
-  margin: 0 auto;
-}
-
-.key-message {
+.guess-pin div:nth-child(2) {
   text-align: center;
 }
 
-.pin-message {
+.correct-pin-message {
+  text-align: center;
+}
+
+.correct-pin-message h3 {
   display: inline-block;
   background-color: #efefef;
-  padding: 10px;
+  font-size: 30px;
+  padding: 15px;
+  margin: 10px 0 30px 0;
+}
+
+.correct-pin-message ul {
+  text-align: left;
 }
 
 .hint-for-murderer {
+  text-align: center;
+}
+
+.ending-2 h1 {
   text-align: center;
 }
 
@@ -88,18 +239,6 @@ footer {
   height: 50px;
 }
 
-
-
-
-
 .display-hide {
   display: none;
-}
-
-.display-show {
-  display: block;
-}
-
-.display-inline {
-  display: inline;
 }

@@ -10,41 +10,37 @@
 <body>
   <header>
     <h1>Sherlock Holmes</h1>
-    <h3>- Crack the codes -</h3>
+    <h2>- Crack the codes -</h2>
   </header>
   <div class="body-wrapper">
     <section>
-      <br />
       <p>You are an assistant who works at Sherlock's office. When you were making a coffee in the morning, a well-known police officer rushed into the office.</p><br/>
-
-      <p>Lestrade: "Hi Sherlock! Are you here?"</p>
-      <p>Sherlock: "Why are you in such a hurry?"</p>
-      <p>Lestrade: "There was a murder in Sydney the other day, but we're having a hard time finding out who did it."</p>
-      <p>Sherlock: "Tell me more about it."</p>
-      <p>Lestrade: "Mike, a genius mathematician, was poisoned during his birthday party. But in fact, he knew that someone was after his life, and he had secretly left information about that person on his computer in case something happened to him."</p>
-      <p>Sherlock: "Then your job sounds pretty easy."</p>
-      <p>Lestrade: "But somehow he had that information encrypted."</p>
-      <p>Sherlock: "Encrypted?"</p>
-      <p>Lestrade: "Yes, we're struggling to crack the codes and need your help."</p>
-      <p>Sherlock: "I see."</p>
-      <p>Lestrade: "Here are the codes he left in his computer. Also, we believe it is very likely that the murderer is a participant at the party. I'll give you a list of the participants."</p><br />
-
+      <ul class="talks_wrap">
+        <li class="talks lestrade">"Hi Sherlock! Are you here?"</li>
+        <li class="talks sherlock">"Why are you in such a hurry?"</li>
+        <li class="talks lestrade">"There was a murder in Sydney the other day, but we're having a hard time finding out who did it."</li>
+        <li class="talks sherlock">"Tell me more about it."</li>
+        <li class="talks lestrade">"Mike, a genius mathematician, was poisoned during his birthday party. But in fact, he knew that someone was after his life, and he had secretly left information about that person on his computer in case something happened to him."</li>
+        <li class="talks sherlock">"Then your job sounds pretty easy."</li>
+        <li class="talks lestrade">"But somehow he had that information encrypted."</li>
+        <li class="talks sherlock">"Encrypted?"</li>
+        <li class="talks lestrade">"Yes, we're struggling to crack the codes and need your help."</li>
+        <li class="talks sherlock">"I see."</li>
+        <li class="talks lestrade">"Here are the codes he left in his computer. Also, we believe it is very likely that the murderer is a participant at the party. I'll give you a list of the participants."</li>
+      </ul><br />
+      
       <p>Lestrade put some documents on the desk and left the office in a hurry. Sherlock looked over those documents and said to you.</p><br />
 
-      <p>Sherlock: "This is interesting. Do you want to find who the murderer is with me?"</p><br />
+      <ul class="talks_wrap">
+        <li class="talks sherlock">"This is interesting. Do you want to find who the murderer is with me?"</li>
+      </ul>
       </section>
 
       <section>
         <div class="flex-wrapper">
-          <div class="profile_of_victim_icon">
-            <img src="image/envelop_paper.png" alt="envelop_paper">
-          </div>
-          <div class="list_of_participants_icon">
-            <img src="image/document_list.png" alt="document_list">
-          </div>
-          <div class="codes_icon">
-            <img src="image/computer_folder.png" alt="computer_folder">
-          </div>
+          <img src="image/envelop_paper.png" alt="envelop_paper" class="envelop_paper_icon icon">
+          <img src="image/document_list.png" alt="document_list" class="document_list_icon icon">
+          <img src="image/computer_folder.png" alt="computer_folder" class="computer_folder_icon icon">
         </div>
       </section>
       
@@ -57,295 +53,297 @@
           <li>Birthplace: Australia</li>
           <li>Current city: Sydney</li>
           <li>Occupation: Mathematician</li>
+          <li></li>
         </ul>
       </section>
 
       <section class="list_of_participants display-hide">
-        <div class="guests">
-          <h4>List of the participants</h4>
-          <div class="guest">
-            <h5 class="participant1">Participant 1</h5>
-            <ul>
-              <div class="participant1-profile display-hide">
-                <li>Name: James Smith</li>
-                <li>Gender: Male</li>
-                <li>Birthday: 7 April 1987</li>
-                <li>Birthplace: Australia</li>
-                <li>Current city: Sydney</li>
-                <li>Occupation: Doctor</li>
-              </div>
-            </ul>
-          </div>
-          <div class="guest">
-            <h5 class="participant2">Participant 2</h5>
-            <ul>
-              <div class="participant2-profile display-hide">
-                <li>Name: Graeme Connolly</li>
-                <li>Gender: Male</li>
-                <li>Birthday: 10 February 1977</li>
-                <li>Birthplace: Australia</li>
-                <li>Current city: Sydney</li>
-                <li>Occupation: Salesperson</li>
-              </div>
-            </ul>
-          </div>
-          <div class="guest">
-            <h5 class="participant3">Participant 3</h5>
-            <ul>
-              <div class="participant3-profile display-hide">
-                <li>Name: Nahum Turner</li>
-                <li>Gender: Male</li>
-                <li>Birthday: 28 November 1984</li>
-                <li>Birthplace: USA</li>
-                <li>Current city: Sydney</li>
-                <li>Occupation: Teacher</li>
-              </div>
-            </ul>
-          </div>
-          <div class="guest">
-            <h5 class="participant4">Participant 4</h5>
-            <ul>
-              <div class="participant4-profile display-hide">
-                <li>Name: Aaron Nelson</li>
-                <li>Gender: Male</li>
-                <li>Birthday: 13 January 1991</li>
-                <li>Birthplace: UK</li>
-                <li>Current city: Gold Coast</li>
-                <li>Occupation: Chef</li>
-              </div>
-            </ul>
-          </div>
-          <div class="guest">
-            <h5 class="participant5">Participant 5</h5>
-            <ul>
-              <div class="participant5-profile display-hide">
-                <li>Name: Amelia Ramsay</li>
-                <li>Gender: Female</li>
-                <li>Birthday: 23 August 1985</li>
-                <li>Birthplace: Australia</li>
-                <li>Current city: Sydney</li>
-                <li>Occupation: Nurse</li>
-              </div>
-            </ul>
-          </div>
-          <div class="guest">
-            <h5 class="participant6">Participant 6</h5>
-            <ul>
-              <div class="participant6-profile display-hide">
-                <li>Name: Jessica McDonald</li>
-                <li>Gender: Female</li>
-                <li>Birthday: 30 May 1990</li>
-                <li>Birthplace: Australia</li>
-                <li>Current city: Melbourne</li>
-                <li>Occupation: Lawyer</li>
-              </div>
-            </ul>
-          </div>
-          <div class="guest">
-            <h5 class="participant7">Participant 7</h5>
-            <ul>
-              <div class="participant7-profile display-hide">
-                <li>Name: Edith Walle</li>
-                <li>Gender: Female</li>
-                <li>Birthday: 8 July 1994</li>
-                <li>Birthplace: Germany</li>
-                <li>Current city: Perth</li>
-                <li>Occupation: Cabin attendant</li>
-              </div>
-            </ul>
-          </div>
-        </div>
+        <h4>List of the participants</h4>
+        <ul>
+          <li class="participant">Participant 1</li>
+          <ul class="display-hide">
+            <li>Name: James Smith</li>
+            <li>Gender: Male</li>
+            <li>Birthday: 7 April 1987</li>
+            <li>Birthplace: Australia</li>
+            <li>Current city: Sydney</li>
+            <li>Occupation: Doctor</li>
+            <li></li>
+          </ul>
+          <li class="participant">Participant 2</li>
+          <ul class="display-hide">
+            <li>Name: Graeme Connolly</li>
+            <li>Gender: Male</li>
+            <li>Birthday: 10 February 1977</li>
+            <li>Birthplace: Australia</li>
+            <li>Current city: Sydney</li>
+            <li>Occupation: Salesperson</li>
+            <li></li>
+          </ul>
+          <li class="participant">Participant 3</li>
+          <ul class="display-hide">
+            <li>Name: Nahum Turner</li>
+            <li>Gender: Male</li>
+            <li>Birthday: 28 November 1984</li>
+            <li>Birthplace: USA</li>
+            <li>Current city: Sydney</li>
+            <li>Occupation: Teacher</li>
+            <li></li>
+          </ul>
+          <li class="participant">Participant 4</li>
+          <ul class="display-hide">
+            <li>Name: Aaron Nelson</li>
+            <li>Gender: Male</li>
+            <li>Birthday: 13 January 1991</li>
+            <li>Birthplace: UK</li>
+            <li>Current city: Gold Coast</li>
+            <li>Occupation: Chef</li>
+            <li></li>
+          </ul>
+          <li class="participant">Participant 5</li>
+          <ul class="display-hide">
+            <li>Name: Amelia Ramsay</li>
+            <li>Gender: Female</li>
+            <li>Birthday: 23 August 1985</li>
+            <li>Birthplace: Australia</li>
+            <li>Current city: Sydney</li>
+            <li>Occupation: Nurse</li>
+            <li></li>
+          </ul>
+          <li class="participant">Participant 6</li>
+          <ul class="display-hide">
+            <li>Name: Jessica McDonald</li>
+            <li>Gender: Female</li>
+            <li>Birthday: 30 May 1990</li>
+            <li>Birthplace: Australia</li>
+            <li>Current city: Melbourne</li>
+            <li>Occupation: Lawyer</li>
+            <li></li>
+          </ul>
+          <li class="participant">Participant 7</li>
+          <ul class="display-hide">
+            <li>Name: Edith Walle</li>
+            <li>Gender: Female</li>
+            <li>Birthday: 8 July 1994</li>
+            <li>Birthplace: Germany</li>
+            <li>Current city: Perth</li>
+            <li>Occupation: Cabin attendant</li>
+            <li></li>
+          </ul>
+          <li></li>
+        </ul>
       </section>
 
       <section class="codes display-hide">
-        <h4>Codes</h4>
-        <h5 class="code1-txt">Code 1</h5>
-        <div class="code1-wrapper display-hide">
+        <h3 class="code-title">Code 1</h3><br />
+        <div class="code display-hide">
           <img src="image/code1.jpg" alt="code1" class="code-img">
-          <div class="input-btn input-btn1">
-            <input type="text" name="answer-code1-input" class="answer-code1-input">
-            <button class="answer1-btn">Submit</button><br />
-            <p class="hint1-btn hint-btn">Hint</p>
-            <div class="hint1 display-hide">
-              <p class="hint1-1-btn hint-btn">Hint 1: <span class="hint1-1 display-hide">It doesn't always start on the left.</span></p><br />
-              <p class="hint1-2-btn hint-btn">Hint 2: <span class="hint1-2 display-hide">Read vertically.</span></p><br />
-              <p class="hint1-3-btn hint-btn">Hint 3: <span class="hint1-3 display-hide">QLD is one of Australia's states.</span></p><br />
+          <div>
+            <input type="text" name="answer-code1-input">
+            <button>Submit</button><br />
+            <p class="hint-block">Hint</p>
+            <div class="display-hide">
+              <p class="hint-line">Hint 1: <span class="display-hide">It doesn't always start on the left.</span></p><br />
+              <p class="hint-line">Hint 2: <span class="display-hide">Read vertically.</span></p><br />
+              <p class="hint-line">Hint 3: <span class="display-hide">QLD is one of Australia's states.</span></p><br />
             </div>
           </div>
-          <div class="messages message1 display-hide">
-            <p>You: "I got it! It must be <span class="answer1"></span>."</p>
-            <p>Sherlock: "Your answer is <span class="cw1"></span>."</p>
+          <div class="display-hide">
+            <p>You: "I got it! It must be <span></span>."</p>
+            <p>Sherlock: "Your answer is <span></span>."</p>
           </div><br />
         </div>
 
-        <h5 class="code2-txt">Code 2</h5>
-        <div class="code2-wrapper display-hide">
+        <h3 class="code-title">Code 2</h3><br />
+        <div class="code display-hide">
           <img src="image/code2.jpg" alt="code2" class="code-img">
-          <div class="input-btn input-btn2">
-            <input type="text" name="answer-code2-input" class="answer-code2-input">
-            <button class="answer2-btn">Submit</button><br />
-            <p class="hint2-btn hint-btn">Hint</p>
-            <div class="hint2 display-hide">
-              <p class="hint2-1-btn hint-btn">Hint 1: <span class="hint2-1 display-hide">W = 12, S = 22, X = 32</span></p><br />
-              <p class="hint2-2-btn hint-btn">Hint 2: <span class="hint2-2 display-hide">Something near you will provide a clue.</span></p><br />
-              <p class="hint2-3-btn hint-btn">Hint 3: <span class="hint2-3 display-hide">Look at the keyboard layout</span></p><br />
-              <p class="hint2-4-btn hint-btn">Hint 4: <span class="hint2-4 display-hide">The left digit represents the row and the right digit represents the column.</span></p><br />
+          <div>
+            <input type="text" name="answer-code2-input">
+            <button>Submit</button><br />
+            <p class="hint-block">Hint</p>
+            <div class="display-hide">
+              <p class="hint-line">Hint 1: <span class="display-hide">W = 12, S = 22, X = 32</span></p><br />
+              <p class="hint-line">Hint 2: <span class="display-hide">Something near you will provide a clue.</span></p><br />
+              <p class="hint-line">Hint 3: <span class="display-hide">Look at the keyboard layout</span></p><br />
+              <p class="hint-line">Hint 4: <span class="display-hide">The left digit represents the row and the right digit represents the column.</span></p><br />
             </div>
           </div>
-          <div class="messages message2 display-hide">
-            <p>You: "I got it! It must be <span class="answer2"></span>."</p>
-            <p>Sherlock: "Your answer is <span class="cw2"></span>."</p>
+          <div class="display-hide">
+            <p>You: "I got it! It must be <span></span>."</p>
+            <p>Sherlock: "Your answer is <span></span>."</p>
           </div><br />
         </div>
 
-        <h5 class="code3-txt">Code 3</h5>
-        <div class="code3-wrapper display-hide">
+        <h3 class="code-title">Code 3</h3><br />
+        <div class="code display-hide">
           <img src="image/code3.jpg" alt="code3" class="code-img">
-          <div class="input-btn input-btn3">
-            <input type="text" name="answer-code3-input" class="answer-code3-input">
-            <button class="answer3-btn">Submit</button><br />
-            <p class="hint3-btn hint-btn">Hint</p>
-            <div class="hint3 display-hide">
-              <p class="hint3-1-btn hint-btn">Hint 1: <span class="hint3-1 display-hide">Use the upper figure as a reference.</span></p><br />
-              <p class="hint3-2-btn hint-btn">Hint 2: <span class="hint3-2 display-hide">The first figure represents "H".</span></p><br />
-              <p class="hint3-3-btn hint-btn">Hint 3: <span class="hint3-3 display-hide">What is missing in the lower figures compared to the upper one.</span></p><br />
+          <div>
+            <input type="text" name="answer-code3-input">
+            <button>Submit</button><br />
+            <p class="hint-block">Hint</p>
+            <div class="display-hide">
+              <p class="hint-line">Hint 1: <span class="display-hide">Use the upper figure as a reference.</span></p><br />
+              <p class="hint-line">Hint 2: <span class="display-hide">The first figure represents "H".</span></p><br />
+              <p class="hint-line">Hint 3: <span class="display-hide">What is missing in the lower figures compared to the upper one.</span></p><br />
             </div>
           </div>
-          <div class="messages message3 display-hide">
-            <p>You: "I got it! It must be <span class="answer3"></span>."</p>
-            <p>Sherlock: "Your answer is <span class="cw3"></span>."</p><br />
+          <div class="display-hide">
+            <p>You: "I got it! It must be <span></span>."</p>
+            <p>Sherlock: "Your answer is <span></span>."</p><br />
           </div>
         </div>
 
-        <h5 class="code4-txt">Code 4</h5>
-        <div class="code4-wrapper display-hide">
+        <h3 class="code-title">Code 4</h3><br />
+        <div class="code display-hide">
           <img src="image/code4.jpg" alt="code4" class="code-img">
-          <div class="input-btn input-btn4">
-            <input type="text" name="answer-code4-input" class="answer-code4-input">
-            <button class="answer4-btn">Submit</button><br />
-            <p class="hint4-btn hint-btn">Hint</p>
-            <div class="hint4 display-hide">
-              <p class="hint4-1-btn hint-btn">Hint 1: <span class="hint4-1 display-hide">How many of each animal are in the frame?</span></p><br />
-              <p class="hint4-2-btn hint-btn">Hint 2: <span class="hint4-2 display-hide"><img src="image/mouse.png" alt="mouse" height="40px">represents "u".</span></p><br />
-              <p class="hint4-3-btn hint-btn">Hint 3: <span class="hint4-3 display-hide">The third letter of "mouse" is "u"</span></p><br />
+          <div>
+            <input type="text" name="answer-code4-input">
+            <button>Submit</button><br />
+            <p class="hint-block">Hint</p>
+            <div class="display-hide">
+              <p class="hint-line">Hint 1: <span class="display-hide">How many of each animal are in the frame?</span></p><br />
+              <p class="hint-line">Hint 2: <span class="display-hide"><img src="image/mouse.png" alt="mouse">represents "u".</span></p><br />
+              <p class="hint-line">Hint 3: <span class="display-hide">The third letter of "mouse" is "u"</span></p><br />
             </div>
           </div>
-          <div class="messages message4 display-hide">
-            <p>You: "I got it! It must be <span class="answer4"></span>."</p>
-            <p>Sherlock: "Your answer is <span class="cw4"></span>."</p>
+          <div class="display-hide">
+            <p>You: "I got it! It must be <span></span>."</p>
+            <p>Sherlock: "Your answer is <span></span>."</p>
           </div><br />
         </div>
 
-        <h5 class="code5-txt">Code 5</h5>
-        <div class="code5-wrapper display-hide">
+        <h3 class="code-title">Code 5</h3><br />
+        <div class="code display-hide">
           <img src="image/code5.jpg" alt="code5" class="code-img">
-          <div class="input-btn input-btn5">
-            <input type="text" name="answer-code5-input" class="answer-code5-input">
-            <button class="answer5-btn">Submit</button><br />
-            <p class="hint5-btn hint-btn">Hint</p>
-            <div class="hint5 display-hide">
-              <p class="hint5-1-btn hint-btn">Hint 1: <span class="hint5-1 display-hide">This is a Venn diagram.</span></p><br />
-              <p class="hint5-2-btn hint-btn">Hint 2: <span class="hint5-2 display-hide">The blue circle is small. The pink one is medium. The red one is large.</span></p><br />
-              <p class="hint5-3-btn hint-btn">Hint 3: <span class="hint5-3 display-hide"><font color="#1a73e8">1</font> is "s".</span></p><br />
-              <p class="hint5-4-btn hint-btn">Hint 4: <span class="hint5-4 display-hide">The <font color="#1a73e8">2</font>nd letter of "small" is "m".</span></p><br />
+          <div>
+            <input type="text" name="answer-code5-input">
+            <button>Submit</button><br />
+            <p class="hint-block">Hint</p>
+            <div class="display-hide">
+              <p class="hint-line">Hint 1: <span class="display-hide">This is a Venn diagram.</span></p><br />
+              <p class="hint-line">Hint 2: <span class="display-hide">The blue circle is small. The pink one is medium. The red one is large.</span></p><br />
+              <p class="hint-line">Hint 3: <span class="display-hide"><font color="#1a73e8">1</font> is "s".</span></p><br />
+              <p class="hint-line">Hint 4: <span class="display-hide">The <font color="#1a73e8">2</font>nd letter of "small" is "m".</span></p><br />
             </div>
           </div>
-          <div class="messages message5 display-hide">
-            <p>You: "I got it! It must be <span class="answer5"></span>."</p>
-            <p>Sherlock: "Your answer is <span class="cw5"></span>."</p>
+          <div class="display-hide">
+            <p>You: "I got it! It must be <span></span>."</p>
+            <p>Sherlock: "Your answer is <span></span>."</p>
           </div><br />
         </div>
       </section>
       
       <section class="after-crack-codes display-hide">
-        <p>Sherlock: "Finally, we cracked all the codes and the answers can be used as clues to find who the murderer is."</p>
-        <p></p>
+        <ul class="talks_wrap">
+          <li class="talks sherlock">"Finally, we cracked all the codes and the answers can be used as clues to find who the murderer is."</li>
+        </ul> 
       </section>
 
       <section class="call-message display-hide">
-        <br />
-        <p>When you were about to tell who the murderer is to Sherlock, his phone rang.</p>
-        <p>Sherlock: "Hello?"</p>
-        <p>Lestrade: "Hi Sherlock, I forgot to tell you. Actually, there is another file in his computer and I think it might be the key to help us identify the murderer. But the file is locked and you need to enter the correct password to open the file. I've sent you the file right now, so can you check it?"</p><br />
-        <p>Lestrade hung up the phone.</p>
-        <p>Sherlock: "OK, to confirm that the person you suspect is truely the murderer, we should open this locked file."</p><br />
-        <div class="computer_lock_document_icon">
-          <img src="image/computer_lock_document.png" alt="computer_lock_document"><br />
+        <p>When you were about to tell who the murderer is to Sherlock, his phone rang.</p><br />
+        <ul class="talks_wrap">
+          <li class="talks sherlock">"Hello?"</li>
+          <li class="talks lestrade">"Hi Sherlock, I forgot to tell you. Actually, there is another file in his computer and I think it might be the key to help us identify the murderer. But the file is locked and you need to enter the correct password to open the file. I've sent you the file right now, so can you check it?"</li>
+        </ul><br />
+        <p>Lestrade hung up the phone.</p><br />
+        <ul class="talks_wrap">
+          <li class="talks sherlock">"OK, to confirm that the person you suspect is truely the murderer, we should open this locked file."</li>
+        </ul><br />
+        <img src="image/computer_lock_document.png" alt="computer_lock_document"  class="computer_lock_document_icon icon"><br />
+      </section>
+
+      <section class="guess-pin display-hide">
+        <img src="image/pin.jpg" alt="pin" class="code-img">
+        <div>
+          <input type="number" name="answer-pin-input">
+          <button>Submit</button><br />
+          <p class="hint-block">Hint</p>
+          <div class="display-hide">
+            <p class="hint-line">Hint 1: <span class="display-hide">Think about why there is "?" at the end of the number sequence.</span></p><br />
+            <p class="hint-line">Hint 2: <span class="display-hide">Convert each number to an alphabet.</span></p><br />
+            <p class="hint-line">Hint 3: <span class="display-hide">Each number indicates the order in the alphabet.</span></p><br />
+            <p class="hint-line">Hint 4: <span class="display-hide">The sequence means "Who am I?" Is there anything in the victim's profile that would help us identify the PIN?</span></p><br />
+            <p class="hint-line">Hint 5: <span class="display-hide">The sequence is written in italic. Have you seen any other words in italic elsewhere?</span></p><br />
+            <p class="hint-line">Hint 6: <span class="display-hide">Convert "Mike" to numbers by using the logic in "Code 2".</span></p><br />
+          </div>
         </div>
       </section>
 
-      <section class="key-section display-hide">
-        <img src="image/pin.jpg" alt="pin">
-        <div class="input-btn input-pin">
-          <input type="number" name="answer-pin-input" class="answer-pin-input">
-          <button class="pin-btn">Submit</button><br />
-          <p class="hint-pin-btn hint-btn">Hint</p>
-          <div class="hint-pin display-hide">
-            <p class="hint-pin-i-btn hint-btn">Hint 1: <span class="display-hide">Think about why there is "?" at the end of the number sequence.</span></p><br />
-            <p class="hint-pin-i-btn hint-btn">Hint 2: <span class="display-hide">Convert each number to an alphabet.</span></p><br />
-            <p class="hint-pin-i-btn hint-btn">Hint 3: <span class="display-hide">Each number indicates the order in the alphabet.</span></p><br />
-            <p class="hint-pin-i-btn hint-btn">Hint 4: <span class="display-hide">The sequence means "Who am I?" Is there anything in the victim's profile that would help us identify the PIN?</span></p><br />
-            <p class="hint-pin-i-btn hint-btn">Hint 5: <span class="display-hide">The sequence is written in italic. Have you seen any other words in italic elsewhere?</span></p><br />
-            <p class="hint-pin-i-btn hint-btn">Hint 6: <span class="display-hide">Convert "Mike" to numbers by using the logic in "Code 2".</span></p><br />
-          </div>
-        </div>
-
-        <div class="key-message display-hide">
-          <br />
+      <section>
+        <div class="correct-pin-message display-hide">
           <p>The following message appeared.</p>
-          <h2 class="pin-message"></h2>
+          <h3>Read the <span></span> letters of the words!</h3><br />
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"Hmm...what does this message mean? Maybe this is the final clue to identify the murderer. Let's try to figure this out."</li>
+          </ul>
         </div>
-        <div class="error-message display-hide">
+        <div class="wrong-pin-message display-hide">
           <p>Nothing happened.</p>
           <p>Sherlock: "The PIN seems to be incorrect."</p>
         </div>
       </section>
-
-      <section> 
-        <div class="final-message display-hide">
-          <br />
-          <p>Sherlock: "Hmm...what does this message mean? Maybe this is the final clue to identify the murderer. Let's try to figure this out."</p>
-        </div>
-      </section>
         
-      <section class="guess-murderer display-hide"><!-- display-hide-->
-        <h1>Who do you think the murderer is?</h1>
-        <p><small>Input his or her full name.</small></p>
-        <input type="text" name="murderer-input" class="murderer-input">
-        <button class="murderer-btn">Submit</button>
-      </section>
-
-      <section class="hint-for-murderer display-hide">
-        <p class="hint-murderer-btn hint-btn">Hint</p>
-        <div class="hint-murderer display-hide">
-          <p class="hint-murderer-i-btn hint-btn">Hint 1: <span class="display-hide">We've got the five words from the codes.</span></p><br />
-          <p class="hint-murderer-i-btn hint-btn first-letters display-hide">Hint 2: <span class="display-hide">The first letter of the first word we got by cracking Code 1 is "N". The next one is "A", etc.</span><br /></p>
-          <p class="hint-murderer-i-btn hint-btn last-letters display-hide">Hint 2: <span class="display-hide">The last letter of the first word we got by cracking Code 1 is "W". The next one is "A", etc.</span><br /></p>
+      <section>
+        <div class="guess-murderer display-hide">
+          <h3>Who do you think the murderer is?</h3>
+          <p>Input his or her full name.</p>
+          <input type="text" name="murderer-input">
+          <button>Submit</button>
+        </div>
+        <div class="hint-for-murderer display-hide">
+          <p class="hint-block">Hint</p>
+          <div class="display-hide">
+            <p class="hint-line">Hint 1: <span class="display-hide">We've got the five words from the codes.</span></p><br />
+            <p class="hint-line">Hint 2: <span class="display-hide">The <span></span> letter of the word we got by cracking Code 1 is "<span></span>". The next one is "A", etc.</span></p><br />
+          </div>
         </div>
       </section>
 
       <section>
-        <br />
-        <p class="error"></p>
+        <div class="error1 display-hide">
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"We haven't got all the clues to identify the murderer yet. We should figure out the PIN first."</li>
+          </ul>
+        </div>
+        <div class="error2 display-hide">
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"Who is that? The murderer should be one of the participants at the party."</li>
+          </ul>
+        </div>
+        <div class="error3 display-hide">
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"No, I don't think he is the murderer because of the message we got when we entered the PIN."</li>
+          </ul>
+        </div>
+        <div class="error4 display-hide">
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"There is no clue that implies this person is the murderer so far."</li>
+          </ul>
+        </div>
+        <div class="valid display-hide">
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"OK. I will let Lestrade know."</li>
+          </ul>
+        </div>
       </section>
 
       <section>
         <div class="ending-1 display-hide">
-          <br />
-          <p>Sherlock: "Hi Lestrade. Based on all the clues, Nahum Turner is the most suspicious."</p>
-          <p>Lestrade: "Sorry to say, but it can't be true."</p>
-          <p>Sherlock: "How come?"</p>
-          <p>Lestrade: "We just found out that he had a perfect alibi, so it's impossible for him to commit the murder."</p>
-          <p>Sherlock: "Does that mean our reasoning is wrong?"</p>
-          <p>Lestrade: "Unfortunately, yes. He is definitely not the murderer."</p>
-          <br />
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"Hi Lestrade. Based on all the clues, Nahum Turner is the most suspicious."</li>
+            <li class="talks lestrade">"Sorry to say, but it can't be true."</li>
+            <li class="talks sherlock">"How come?"</li>
+            <li class="talks lestrade">"We just found out that he had a perfect alibi, so it's impossible for him to commit the murder."</li>
+            <li class="talks sherlock">"Does that mean our reasoning is wrong?"</li>
+            <li class="talks lestrade">"Unfortunately, yes. He is definitely not the murderer."</li>
+          </ul><br />
           <p>Apparently, you identified the wrong person as the murderer. Let's try to think about it again.</p>
         </div>
-        <div class="ending-2 display-hide">
-          <br />
-          <p>Sherlock: "Hi Lestrade. All the clues indicate that Edith Walle is the murderer."</p>
-          <p>Lestrade: "OK, then we will get her in for questioning ASAP! Thanks for your help."</p>
-          <br />
+        <div class="ending-2 display-hide">          
+          <ul class="talks_wrap">
+            <li class="talks sherlock">"Hi Lestrade. All the clues indicate that Edith Walle is the murderer."</li>
+            <li class="talks lestrade">"OK, then we will get her in for questioning ASAP! Thanks for your help."</li>
+          </ul><br />
           <p>She confessed to her crime and the case was closed. The reason seems to be a tangled love relationship between her and Mike. Nevertheless, why Mike created such cryptic clues to identify her is a mystery to the end. Perhaps he did not want to suspect her and did not want anyone to crack the codes...</p>
           <br />
           <h1>Congratulations! You solved the mystery.</h1>
